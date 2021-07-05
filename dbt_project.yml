@@ -17,6 +17,7 @@ vars:
     card:                 "{{ source('stripe', 'card') }}"
     charge:               "{{ source('stripe', 'charge') }}"
     customer:             "{{ source('stripe', 'customer') }}"
+    dispute:              "{{ source('stripe', 'dispute') }}"
     fee:                  "{{ source('stripe', 'fee') }}"
     invoice:              "{{ source('stripe', 'invoice') }}"
     invoice_line_item:    "{{ source('stripe', 'invoice_line_item') }}"
