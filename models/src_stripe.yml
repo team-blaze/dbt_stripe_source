@@ -155,6 +155,13 @@ sources:
           - name: livemode
             description: Indicates if this is a test customer.
 
+      - name: dispute
+        description: Dispute model
+        freshness: null
+        columns:
+          - name: id
+            description: Unique identifier for the object.
+
       - name: fee
         identifier: "{{ var('stripe_fee_identifier', 'fee')}}"
         description: The details of a fee associated with a balance_transaction

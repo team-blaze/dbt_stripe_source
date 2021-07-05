@@ -145,6 +145,15 @@ models:
       - name: shipping_phone
         description: Attribute of the customer's shipping address.
 
+  - name: stg_stripe__dispute
+    description: Dispute model
+    columns:
+      - name: dispute_id
+        description: Unique identifier for the object.
+        tests:
+          - unique
+          - not_null
+
   - name: stg_stripe__fee
     description: The details of a fee associated with a balance_transation
     columns:
