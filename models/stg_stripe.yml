@@ -151,6 +151,47 @@ models:
         tests:
           - unique
           - not_null
+      - name: amount
+      - name: amount_capturable
+      - name: amount_received
+      - name: application
+      - name: application_fee_amount
+      - name: canceled_at
+      - name: cancellation_reason
+      - name: capture_method
+      - name: confirmation_method
+      - name: created_at
+      - name: currency
+      - name: customer_id
+      - name: description
+      - name: last_payment_error_charge_id
+      - name: last_payment_error_code
+      - name: last_payment_error_decline_code
+      - name: last_payment_error_doc_url
+      - name: last_payment_error_message
+      - name: last_payment_error_param
+      - name: last_payment_error_source_id
+      - name: last_payment_error_type
+      - name: livemode
+      - name: metadata
+      - name: metadata_email_address
+      - name: metadata_invoice_id
+      - name: metadata_invoice_number
+      - name: metadata_org_code
+      - name: metadata_org_name
+      - name: metadata_pre_auth_check
+      - name: metadata_scheme_product_id
+      - name: metadata_transaction_status_id
+      - name: metadata_user_id
+      - name: on_behalf_of
+      - name: payment_method_id
+      - name: payment_method_types
+      - name: receipt_email
+      - name: source_id
+      - name: statement_descriptor
+      - name: status
+      - name: transfer_data_destination
+      - name: transfer_group
 
   - name: stg_stripe__fee
     description: The details of a fee associated with a balance_transation
