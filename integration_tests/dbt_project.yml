@@ -14,6 +14,7 @@ vars:
     stripe_card_identifier:                   "card_data"
     stripe_charge_identifier:                 "charge_data"
     stripe_customer_identifier:               "customer_data"
+    stripe_dispute_identifier:                "dispute"
     stripe_fee_identifier:                    "fee_data"
     stripe_invoice_identifier:                "invoice_data"
     stripe_invoice_line_item_identifier:      "invoice_line_item_data"
