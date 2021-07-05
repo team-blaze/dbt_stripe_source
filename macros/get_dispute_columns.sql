@@ -1,4 +1,4 @@
-{% macro get_card_columns() %}
+{% macro get_dispute_columns() %}
 
 {% set columns = [
     {"name": "_fivetran_synced", "datatype": dbt_utils.type_timestamp()},
