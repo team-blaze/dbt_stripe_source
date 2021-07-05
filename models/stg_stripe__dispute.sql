@@ -38,7 +38,7 @@ final as (
         cancellation_reason,
         capture_method,
         confirmation_method,
-        created_at,
+        created as created_at,
         currency,
         customer_id,
         description,
