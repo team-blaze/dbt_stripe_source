@@ -145,6 +145,13 @@ sources:
           - name: shipping_phone
             description: Attribute of the customer's shipping address.
 
+      - name: dispute
+        description: Dispute model
+        freshness: null
+        columns:
+          - name: id
+            description: Unique identifier for the object.
+
       - name: fee
         description: The details of a fee associated with a balance_transation
         columns:
