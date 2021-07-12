@@ -28,7 +28,7 @@ fields as (
 final as (
     
     select 
-        id	as dispute_id,
+        id as dispute_id,
         amount,
         balance_transaction,
         charge_id,
