@@ -33,7 +33,7 @@ final as (
         balance_transaction,
         charge_id,
         connected_account_id,
-        created	as created_at,
+        created as created_at,
         currency,
         evidence_access_activity_log,
         evidence_billing_address,
