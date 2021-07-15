@@ -43,7 +43,8 @@
     {"name": "is_charge_refundable", "datatype": "boolean"},
     {"name": "livemode", "datatype": "boolean"},
     {"name": "metadata", "datatype": dbt_utils.type_string()},
-    {"name": "reason", "datatype": dbt_utils.type_string()}
+    {"name": "reason", "datatype": dbt_utils.type_string()},
+    {"name": "status", "datatype": dbt_utils.type_string()}
 ] %}
 
 {{ return(columns) }}

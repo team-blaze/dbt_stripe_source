@@ -69,7 +69,8 @@ final as (
         is_charge_refundable,
         livemode,
         metadata,
-        reason
+        reason,
+        status
     from fields
 )
 
