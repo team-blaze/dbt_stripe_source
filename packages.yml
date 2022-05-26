@@ -3,4 +3,4 @@ packages:
     version: 0.8.5
     
   - git: https://github.com/fivetran/dbt_fivetran_utils.git
-    warn-unpinned: false
+    version: 0.3.8
