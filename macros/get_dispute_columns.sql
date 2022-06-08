@@ -1,0 +1,52 @@
+{% macro get_dispute_columns() %}
+
+{% set columns = [
+    {"name": "_fivetran_synced", "datatype": dbt_utils.type_timestamp()},
+    {"name": "amount", "datatype": dbt_utils.type_int()},
+    {"name": "balance_transaction", "datatype": dbt_utils.type_string()},
+    {"name": "charge_id", "datatype": dbt_utils.type_string()},
+    {"name": "connected_account_id", "datatype": dbt_utils.type_string()},
+    {"name": "created", "datatype": dbt_utils.type_timestamp()},
+    {"name": "currency", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_access_activity_log", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_billing_address", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_cancellation_policy_disclosure", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_cancellation_policy", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_cancellation_rebuttal", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_customer_communication", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_customer_email_address", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_customer_name", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_customer_purchase_ip", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_customer_signature", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_details_due_by", "datatype": dbt_utils.type_timestamp()},
+    {"name": "evidence_details_has_evidence", "datatype": "boolean"},
+    {"name": "evidence_details_past_due", "datatype": "boolean"},
+    {"name": "evidence_details_submission_count", "datatype": dbt_utils.type_int()},
+    {"name": "evidence_duplicate_charge_documentation", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_duplicate_charge_explanation", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_duplicate_charge_id", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_product_description", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_receipt", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_refund_policy_disclosure", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_refund_policy", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_refund_refusal_explanation", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_service_date", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_service_documentation", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_shipping_address", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_shipping_carrier", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_shipping_date", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_shipping_documentation", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_shipping_tracking_number", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_uncategorized_file", "datatype": dbt_utils.type_string()},
+    {"name": "evidence_uncategorized_text", "datatype": dbt_utils.type_string()},
+    {"name": "id", "datatype": dbt_utils.type_string()},
+    {"name": "is_charge_refundable", "datatype": "boolean"},
+    {"name": "livemode", "datatype": "boolean"},
+    {"name": "metadata", "datatype": dbt_utils.type_string()},
+    {"name": "reason", "datatype": dbt_utils.type_string()},
+    {"name": "status", "datatype": dbt_utils.type_string()}
+] %}
+
+{{ return(columns) }}
+
+{% endmacro %}
